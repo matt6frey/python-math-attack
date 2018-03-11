@@ -73,13 +73,10 @@ def get_questions(amount, diff, range1, range2):
 
 def game_settings(typeQ, diff, amount):
 	if typeQ == "a":
-		print("opt1 fired")
 		questions = get_questions(amount, diff, 0, 1) # Addition/Subtraction
 	elif typeQ == "m":
-		print("opt2 fired")
 		questions = get_questions(amount, diff, 2, 3) # Multiplication/Division
 	else:
-		print("opt3 fired")
 		questions = get_questions(amount, diff, 0, 3) # All Operators Included
 	return questions
 
